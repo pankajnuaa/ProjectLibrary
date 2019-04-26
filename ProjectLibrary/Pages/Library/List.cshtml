@@ -1,0 +1,20 @@
+﻿@page
+@using Core
+@model ProjectLibrary.Pages.Library.ListModel
+@{
+}
+
+<table class="table">
+    @foreach (var library in Model.Libraries)
+    {
+        <tr>
+            <td>@library.BookId</td>
+            <td>@library.BookName</td>
+            <td>@library.Author</td>
+            <td>@library.Genre</td>
+        </tr>
+    }
+    
+</table>
+
+<div>@Model.Message</div>
